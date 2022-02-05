@@ -30,13 +30,14 @@
     </script>
 </head>
 <body>
-    <header class="w-full h-20 flex justify-center">
+    <header class="w-full h-20 flex justify-center absolute bg-white">
         <nav class="w-4/5 h-full flex justify-between items-center font-bebas">
             <div class="nav-title">
                 <h1 class="text-3xl">Movie Production</h1>
             </div>
             <div class="nav-items">
-                <ul class="flex gap-x-5 text-xl">
+                <ul class="flex gap-x-5 text-xl hidden md:flex lg:flex"> 
+                    <!--Tailwind mobile first approach -->
                     <li>About Us</li>
                     <li>Our Movies</li>
                     <li>Services</li>
@@ -44,5 +45,18 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="h-screen bg-[url('/images/banner.jpg')] bg-cover flex items-center">
+            <div class="ml-10 mr w-2/4 font-bebas text-white">
+                <p>Movie production studio</p>
+                <h1 class="text-7xl">Films Made To</h1>
+                <h1 class="text-7xl text-yellow">Perfection</h1>
+                <p class="font-montserrat mt-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo consequuntur natus minus sit tenetur dicta modi.
+                </p>
+                <button class="border-2 px-5 py-2 text-xl mt-10 hover:bg-yellow hover:text-black hover:border-yellow transition-all">Discover More</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
